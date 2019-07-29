@@ -52,6 +52,8 @@
 
 
 
+
+
 \title{The Data Engineering Cookbook}
 \subtitle{Mastering The Plumbing Of Data Science}
 \author{Andreas Kretz}
@@ -79,9 +81,9 @@ Look no further, you'll find it here.
 If you are looking for AI algorithms and such data scientist things, this book is not for you.
 
 \textbf{How to use this document:} \\ 
-First of all, this is not a training! This cookbook is a collection of skills that I value highly in my daily work as a data engineer. It's intended to be a starting point for you to find the topics to look into and become a data engineer.
+First of all, this is not a training! This cookbook is a collection of skills that I value highly in my daily work as a data engineer. It's intended to be a starting point for you to find the topics to look into and become an awesome data engineer.
 
-You are going to find \textbf{\textit{three types of content}} in this book that will help you understand each topic: Articles I wrote, relevant links to my podcast episodes (video \& audio) and links to helpful websites I like. 
+You are going to find \textbf{\textit{Five Types of Content}} in this book: Articles I wrote, links to my podcast episodes (video \& audio), more then 200 links to helpful websites I like, data engineering interview questions and case studies. 
 
 \textbf{This book is a work in progress!} \\
 As you can see, this book is not finished. I'm constantly adding new stuff and doing videos for the topics. But obviously, because I do this as a hobby my time is limited. You can help making this book even better.
@@ -489,13 +491,13 @@ Check out this Podcast it will help you understand where's the difference and ho
 
 
 \section{AWS,Azure, IBM, Google Cloud basics}
-\section{cloud vs on premise}
+\section{Cloud vs On-Premises}
 
 \begin{table}[h]
 \begin{tabular}{ll}
 \hline
 \multicolumn{2}{l}{\textbf{Podcast Episode:} \#076 Cloud vs On-Premise} \\ \hline
-\multicolumn{2}{p{15cm}}{How do you choose between Cloud vs On-Premise, pros and cons and what you have to think about. Because there are good reasons to not go cloud.
+\multicolumn{2}{p{15cm}}{How do you choose between Cloud vs On-Premises, pros and cons and what you have to think about. Because there are good reasons to not go cloud.
 Also thoughts on how to choose between the cloud providers by just comparing instance prices. Otherwise the comparison will drive you insane.
 My suggestion: Basically use them as IaaS and something like Cloudera as PaaS. Then build your solution on top of that.  }         \\ \hline
 \multicolumn{1}{l|}{YouTube}   & \href{https://youtu.be/BAzj0yGcrnE}{Click here to watch}   \\ 
@@ -504,11 +506,17 @@ My suggestion: Basically use them as IaaS and something like Cloudera as PaaS. T
 \captionof{table}{Podcast: 076 Cloud vs On-Premise} %\label{tbl:spotifycasestudy}
 \end{table}
 
-
-\section{up \& downsides}
 \section{Security}
 
-Listen to a few thoughts about the cloud in this podcast: \url{https://anchor.fm/andreaskayy/embed/episodes/Dont-Be-Arrogant-The-Cloud-is-Safer-Then-Your-On-Premise-e16k9s}
+
+Listen to a few thoughts about the cloud in this podcast: 
+\url{https://anchor.fm/andreaskayy/embed/episodes/Dont-Be-Arrogant-The-Cloud-is-Safer-Then-Your-On-Premise-e16k9s}
+
+\section{Hybrid Clouds}
+
+Hybrid clouds are a mixture of on-premises and cloud deployment. A very interesting example for this is Google Anthos:
+
+\url{https://cloud.google.com/anthos/}
 
 \chapter{Security Zone Design}
 \section{How to secure a multi layered application}
@@ -1115,7 +1123,6 @@ APIs, Application Programming Interfaces are the cornerstones of any great data 
 \captionof{table}{Podcast: 033 How APIs Rule The World} %\label{tbl:spotifycasestudy}
 \end{table}
 
-\section{HTTP Post/Get}
 \section{API Design}
 In this podcast episode we look into the Twitter API. It's a great example how to build an API
 
@@ -1130,13 +1137,44 @@ In this podcast episode we look into the Twitter API. It's a great example how t
 \captionof{table}{Podcast: 081 Twitter API Research} %\label{tbl:spotifycasestudy}
 \end{table}
 
+\section{Implementation Frameworks}
 
-\section{Implementation}
+Jersey:
+
+\url{https://jersey.github.io/documentation/latest/getting-started.html}
+
+Swagger:
+
+\url{https://github.com/swagger-api/swagger-core/wiki/Swagger-2.X---Getting-started}
+
+Jersey vs Swagger:
+
+\url{https://stackoverflow.com/questions/36997865/what-is-the-difference-between-swagger-api-and-jax-rs}
+
+Spring Framework:
+
+\url{https://spring.io/}
+
+When to use Spring or Jersey:
+
+\url{https://stackoverflow.com/questions/26824423/what-is-the-difference-among-spring-rest-service-and-jersey-rest-service-and-spr}
+
 \section{OAuth security}
 
 \chapter{Databases}
 
 \section{SQL Databases}
+
+\subsection{PostgreSQL DB}
+
+Homepage:
+
+\url{https://www.postgresql.org/}
+ 
+Postgre vs Mongodb:
+
+\url{https://blog.panoply.io/postgresql-vs-mongodb}
+
 
 \subsection{Database Design}
 \subsection{SQL Queries}
@@ -1209,6 +1247,118 @@ This mechanic of splitting a large file in blocks and distributing them over the
 See the MapReduce section for an example.
 
 \subsection{Document Store MongoDB}
+
+\begin{table}[h]
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{l}{\textbf{Podcast Episode:} \#093 What is MongoDB} \\ \hline
+\multicolumn{2}{p{15cm}}{I was always curious about MongoDB. In this stream we go over the links you can find below}         \\ \hline
+\multicolumn{1}{l|}{YouTube}   & \href{https://youtu.be/U05knQN29FA}{Click here to watch}   \\  \hline
+\end{tabular}
+\captionof{table}{Podcast: 093 What is MongoDB} %\label{tbl:spotifycasestudy}
+\end{table}
+
+\textbf{Links:}
+
+What is mongoDB:
+
+\url{https://www.guru99.com/what-is-mongodb.html#4}
+
+Or directly from MongoDB.com:
+
+\url{https://www.mongodb.com/what-is-mongodb}
+ 
+Storage in BSON files:
+
+\url{https://en.wikipedia.org/wiki/BSON}
+
+Hello World in MongoDB:
+
+\url{https://www.mkyong.com/mongodb/mongodb-hello-world-example}
+
+Real-Time Analytics on MongoDB Data in Power BI:
+
+\url{https://dzone.com/articles/real-time-analytics-on-mongodb-data-in-power-bi}
+  
+Spark and Mongodb:
+
+\url{https://www.mongodb.com/scale/when-to-use-apache-spark-with-mongodb}
+ 
+MongoDB vs Time Series Database:
+
+\url{https://blog.timescale.com/how-to-store-time-series-data-mongodb-vs-timescaledb-postgresql-a73939734016/}
+ 
+Fun article titled why you should never use mongodb:
+
+\url{http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/}
+ 
+MongoDB vs Cassandra:
+
+\url{https://blog.panoply.io/cassandra-vs-mongodb}
+
+\subsection{Elasticsearch Search Engine and Document Store}
+
+Elasticsearch is not a DB but firstly a search engine that indexes JSON documents.
+
+\begin{table}[htbp]
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{l}{\textbf{Podcast Episode:} \#095 What is Elasticsearch \& Why is It So Popular?} \\ \hline
+\multicolumn{2}{p{15cm}}{Elasticsearch is a super popular tool for indexing and searching data. On this stream we check out how it works, architectures and what to use it for. There must be a reason why it is so popular.}         \\ \hline
+\multicolumn{1}{l|}{YouTube}   & \href{https://youtu.be/hNb5zB4OPXM}{Click here to watch}   \\  \hline
+\end{tabular}
+\captionof{table}{Podcast: What is Elasticsearch \& Why is It So Popular?} %\label{tbl:spotifycasestudy}
+\end{table}
+
+Links:
+
+Great example for architecture with Elasticsearch, Logstash and Kibana: \\
+\url{https://www.elastic.co/pdf/architecture-best-practices.pdf}
+
+Introduction to Elasticsearch in the documentation: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html}
+
+Working with JSON documents: \\
+\url{https://www.slideshare.net/openthinklabs/03-elasticsearch-data-in-data-out}
+
+JSONs need to be flattened heres how to work with nested objects in the JSON: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html}
+
+Indexing basics: \\
+\url{https://www.slideshare.net/knoldus/deep-dive-into-elasticsearch}
+
+How to query data with DSL language: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-common-terms-query.html}
+
+How to do searches with search API: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html}
+
+General recommendations when working with Elasticsearch: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/general-recommendations.html}
+
+JSON document example and intro to Kibana: \\
+\url{https://www.slideshare.net/objectrocket/an-intro-to-elasticsearch-and-kibana}
+
+How to connect Tableau to Elasticsearch: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-client-apps-tableau.html}
+
+Benchmarks how fast Elasticsearch is: \\
+\url{https://medium.appbase.io/benchmarking-elasticsearch-1-million-writes-per-sec-bf37e7ca8a4c}
+
+Elasticsearch vs MongoDB quick overview: \\
+\url{https://db-engines.com/en/system/Elasticsearch%3BMongoDB}
+
+Logstash overview (preprocesses data before insert into Elasticsearch)
+\url{https://www.elastic.co/products/logstash}
+
+X-Pack Security for Elasticsearch: \\
+\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api.html}
+
+Google Trends Grafana vs Kibana: \\
+\url{https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11fy132gmf,%2Fg%2F11cknd0blr}
+
+
+
 \subsection{Hive Warehouse}
 \subsection{Impala}
 \subsection{Kudu}
@@ -1228,15 +1378,27 @@ We look into the architecture of a Druid cluster and check out how Clients acces
 
 
 
-\subsection{Time Series Databases}
-DalmatinerDB
-InfluxDB
-Prometheus
-Riak TS
-OpenTSDB
-KairosDB
-Elasticsearch
-Druid
+\subsection{InfluxDB Time Series Database}
+
+Key concepts:
+
+\url{https://docs.influxdata.com/influxdb/v1.7/concepts/key_concepts/}
+ 
+InfluxDB and Spark Streaming
+
+\url{https://towardsdatascience.com/processing-time-series-data-in-real-time-with-influxdb-and-structured-streaming-d1864154cf8b}
+ 
+Building a Sreaming application with spark, grafana, chronogram and influx:
+
+\url{https://medium.com/@xaviergeerinck/building-a-real-time-streaming-dashboard-with-spark-grafana-chronograf-and-influxdb-e262b68087de}
+ 
+Performance Dashboard Spark and InfluxDB:
+
+\url{https://db-blog.web.cern.ch/blog/luca-canali/2019-02-performance-dashboard-apache-spark}
+
+Other alternatives for time series databases are: DalmatinerDB, InfluxDB, Prometheus, Riak TS, OpenTSDB, KairosDB
+ 
+
 \subsection{MPP Databases (Greenplum)}
 
 
@@ -1567,26 +1729,6 @@ Having a single resource manager instead of two independent ones makes it a lot 
   \label{fig:Bild1}
 \end{figure}
 
-\subsection{KAFKA Commands}
-
-Start Zookeeper container for Kafka:
-
-\begin{lstlisting}
-docker run -d --name zookeeper-server   \
-	--network app-tier   \
-	-e ALLOW_ANONYMOUS_LOGIN=yes    \
-	bitnami/zookeeper:latest
-\end{lstlisting}
-
-Start Kafka container:
-
-\begin{lstlisting}
-docker run -d --name kafka-server  \
-	--network app-tier  \
-	-e KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper-server:2181  \
-	-e ALLOW_PLAINTEXT_LISTENER=yes  \
-	bitnami/kafka:latest
-\end{lstlisting}
 
 \section{Apache Nifi}
 Great blog about Nifi:
@@ -1613,6 +1755,28 @@ Great blog about Nifi:
 My YouTube video how to set up Kafka at home: https://youtu.be/7F9tBwTUSeY
 
 My YouTube video how to write to Kafka: https://youtu.be/RboQBZvZCh0
+
+\section{KAFKA Commands}
+
+Start Zookeeper container for Kafka:
+
+\begin{lstlisting}
+docker run -d --name zookeeper-server   \
+	--network app-tier   \
+	-e ALLOW_ANONYMOUS_LOGIN=yes    \
+	bitnami/zookeeper:latest
+\end{lstlisting}
+
+Start Kafka container:
+
+\begin{lstlisting}
+docker run -d --name kafka-server  \
+	--network app-tier  \
+	-e KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper-server:2181  \
+	-e ALLOW_PLAINTEXT_LISTENER=yes  \
+	bitnami/kafka:latest
+\end{lstlisting}
+
 
 \chapter{Machine Learning}
 
@@ -1872,6 +2036,17 @@ For a local environment you need a good PC. I thought a bit about a budget build
 \chapter{Apache Zeppelin}
 
 \section{Install and Ingest Kafka Topic}
+
+Start the container:
+\begin{lstlisting}
+
+docker run -d -p 8081:8080 --rm \
+-v /Users/xxxx/Documents/DockerFiles/logs:/logs \ 
+-v /Users/xxxx/Documents/DockerFiles/Notebooks:/notebook \
+-e ZEPPELIN_LOG_DIR='/logs' \
+-e ZEPPELIN_NOTEBOOK_DIR='/notebook' \
+--network app-tier --name zeppelin apache/zeppelin:0.7.3
+\end{lstlisting}
 
 \section{Processing Messages with Spark \& SparkSQL}
 
@@ -2462,12 +2637,263 @@ Talk at Strata London slides:
 \url{https://jobs.zalando.com/tech/blog/complex-event-generation-for-business-process-monitoring-using-apache-flink/}
 
 
+
+\part{1001 Data Engineering Interview Questions}
+
+Looking for a job or just want to know what people find important?
+In this chapter you can find a lot of interview questions we collect on the stream. 
+
+Ultimately this should reach at least one thousand and one questions.
+
+\textbf{But Andreas, where are the answers??}
+Answers are for losers. I have been thinking a lot about this and the best way for you to prepare and learn is to look into these questions yourself.
+
+This cookbook or Google will help you a long way. Some Questions we discuss directly on the live stream.
+
+\chapter{Live Streams}
+
+First live stream where we started to collect these questions. 
+
+\begin{table}[h]
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{l}{\textbf{Podcast Episode:} \#096 1001 Data Engineering Interview Questions} \\ \hline
+\multicolumn{2}{p{15cm}}{First live stream where we collect and try to answer as many interview questions as possible. If this helps people and is fun we do this regularly until we reached 1000 and one.}         \\ \hline
+\multicolumn{1}{l|}{YouTube}   & \href{https://youtu.be/WbqRH2r3N40}{Click here to watch}   \\  \hline
+\end{tabular}
+\captionof{table}{Podcast: 096 1001 Data Engineering Interview Questions} %\label{tbl:087Zalando}
+\end{table}
+
+
+\chapter{All Interview Questions}
+
+The interview questions are roughly structured like the sections in the "Basic data Engineering Skills" part.
+This makes it easier to navigate this document. I still need to sort them accordingly.
+
+\section*{SQL DBs}
+
+\begin{itemize}
+\item What are windowing functions?
+\item What is a stored procedure
+\item Why would you use them?
+\item What are atomic attributes
+\item Explain ACID props of a database
+\item How to optimize queries
+\item What are the different types of JOIN (CROSS, INNER, OUTER)
+\item What is the difference between Clustered Index and Non-Clustered Index - with examples?
+\end{itemize}
+
+\section*{The Cloud}
+
+\begin{itemize}
+\item What is serverless
+\item What's the difference between IaaS, PaaS and SaaS
+\item How do you move from the ingest layer to the Cosumption layer? (In Serverless)
+\item Whats the difference between cloud and edge and on-premises
+\item What is edge computing
+\end{itemize}
+
+\section*{Linux}
+
+\begin{itemize}
+\item What is crontab
+\end{itemize}
+
+\section*{Big Data}
+
+\begin{itemize}
+\item What are the 4 V's
+\item Which one is most important?
+\end{itemize}
+
+\section*{Kafka}
+
+\begin{itemize}
+\item What is a topic
+\item How to ensure FIFO
+\item How do you know if all messages in a topic have been fully consumed
+\item What are brokers
+\item What are consumergroups
+\item What is a producer
+\end{itemize}
+
+\section*{Coding}
+
+\begin{itemize}
+\item What's the difference between an object and a class
+\item Explain immutability
+\item What are AWS Lambda functions and why would you use them
+\item Difference between library, framework and package
+\item How to reverse a linked list
+\item difference between args and kwargs
+\item Difference between oop and functional programming
+\end{itemize}
+
+\section*{NoSQL DBs}
+
+\begin{itemize}
+\item What's a key/value (rowstore) store
+\item What's a columnstore
+\item Diff between Row an col.store
+\item What's a document store
+\item Difference between Redshift and Snowflake
+\end{itemize}
+
+\section*{Hadoop}
+
+\begin{itemize}
+\item What File Formats can you use in Hadoop
+\item Whats the difference between a name and a datanode
+\item What is HDFS
+\item What is the purpous of YARN
+\end{itemize}
+
+\section*{Lambda Architecture}
+
+\begin{itemize}
+\item what is streaming and batching
+\item what is the upside of streamtin vs batching
+\item What's the difference between lambda and kappa architecture
+\item Can you sync the batch and streaming layer and if yes how
+\end{itemize}
+
+
+\section*{Python}
+
+\begin{itemize}
+\item Difference between list tuples and dictionary
+\end{itemize}
+
+\section*{Data Warehouse \& Data Lake}
+
+\begin{itemize}
+\item What is a data lake?
+\item What is a data warehouse
+\item Are there data lake warehouses?
+\item Two Datalakes within single warehouse?
+\item What is a data maart?
+\item what is a slow changing dimension (types)
+\item What is a surrogate key and why use them?
+\end{itemize}
+
+\section*{APIs (REST)}
+
+\begin{itemize}
+\item What does REST mean?
+\item What is idempotency
+\item What are common REST API frameworks (Jersey and Spring)
+\end{itemize}
+
+\section*{Apache Spark}
+
+\begin{itemize}
+\item What's an RDD
+\item What is a dataframe
+\item What is a dataset
+\item How is a dataset typesafe
+\item What is Parquet
+\item What's Avro
+\item Difference between Parquet and Avro
+\item Tumbling Windows Vs. Sliding Windows
+\item Difference between batch ans stream processing
+\item What are microbatches
+\end{itemize}
+
+\section*{MapReduce}
+
+\begin{itemize}
+\item What's a use case of mapreduce
+\item Write a pseudo code for Wordcount
+\item What is a combiner
+\end{itemize}
+
+\section*{Docker \& Kubernetes}
+
+\begin{itemize}
+\item What is a container
+\item Difference between Docker Container and a Virtual PC
+\item What s the easiest way to learn kubernetes fast
+\end{itemize}
+
+\section*{Data Pipelines}
+
+\begin{itemize}
+\item  What is an example of a serverless pipeline
+\item  What's difference between at most once vs at least once vs exactly once
+\item  What systems provide transactions
+\item  What is a ETL pipeline
+\end{itemize}
+
+\section*{Airflow}
+
+\begin{itemize}
+\item What is a DAG (in context of airflow/luigi)
+\item What are Hooks/ is a hook
+\item What are Operators
+\item How to branch?
+\end{itemize}
+
+\section*{DataViszualization}
+
+\begin{itemize}
+\item What's a BI tool
+\end{itemize}
+
+\section*{Security/Privacy}
+
+\begin{itemize}
+\item What is Kerberos
+\item What is a firewall
+\item Whats GDPR?
+\item What's anonymization
+\end{itemize}
+
+\section*{Distrubuted Systems}
+
+\begin{itemize}
+\item how clusters reach consensus (the answer was using consensus protocols like Paxos or Raft). Good I didnt have to explain paxos
+\item What is the cap theorem / explain it (What factors should be considered when choosing a DB?)
+\item How to choose right storage for different data consumers? It’s always a tricky question
+\end{itemize}
+
+\section*{Apache Flink}
+
+\begin{itemize}
+\item what is Flink used for
+\item Flink vs Spark?
+\end{itemize}
+
+\section*{GitHub}
+
+\begin{itemize}
+\item What are branches
+\item What are commits
+\item What's a pull request
+\end{itemize}
+
+\section*{Dev/Ops}
+
+\begin{itemize}
+\item What is continuous integration
+\item What is continuous deployment
+\item Difference CI/CD
+\end{itemize}
+
+\section*{Development / Agile}
+
+\begin{itemize}
+\item What is Scrum
+\item What is OKR
+\item What is Jira and what is it used for
+\end{itemize}
+
+
 \newpage
 
 \begin{thebibliography}{99}
 
 \bibitem{einstein}
-J.~Ely and I.~Stavrov,
+J.~Ely and I.~Stavrov1,
 \emph{Analyzing chalk dust and writing speeds: computational and geometric approaches},
 BoDine Journal of Mathematics \textbf{3} (2001), 14-159.
 
